@@ -55,7 +55,7 @@ const getStageDimensions = (stageSize, isFullScreen) => {
             STAGE_DIMENSION_DEFAULTS.menuHeightAdjustment -
             STAGE_DIMENSION_DEFAULTS.fullScreenSpacingBorderAdjustment;
 
-        stageDimensions.width = stageDimensions.height + (stageDimensions.height / 3);
+        stageDimensions.width = (stageDimensions.height / 9) * 16;
 
         if (stageDimensions.width > window.innerWidth) {
             stageDimensions.width = window.innerWidth;
