@@ -23,6 +23,22 @@
     box-sizing: content-box !important;
 }
 
+.assistLeft, .assistRight {
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    border: 1px dashed red;
+}
+
+.assistLeft {
+    left: 8.9%;
+}
+
+.assistRight {
+    right: 8.9%;
+}
+
 .with-color-picker {
     cursor: none;
     z-index: $z-index-stage-with-color-picker;

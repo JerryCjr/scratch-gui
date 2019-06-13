@@ -192,7 +192,7 @@
         Only reason we need this, is so .targetWrapper, which holds the selectors,
         goes to full vertical height of the window
     */
-    flex-basis: 667px;
+    flex-basis: 812px;
     display: flex;
     flex-direction: column;
     /* pad entire wrapper to the left and right; allow children to fill width */
@@ -202,7 +202,7 @@
 
 .stage-and-target-wrapper.large {
     /* Fix the max width to max large stage size (defined in layout_constants.js) + gutter size */
-    max-width: calc(667px + calc($space * 2));
+    max-width: calc(812px + calc($space * 2));
 }
 
 .stage-and-target-wrapper.large-constrained {
@@ -212,7 +212,7 @@
 
 .stage-and-target-wrapper.small {
     /* Fix the max width to max small stage size (defined in layout_constants.js) + gutter size */
-    max-width: calc(333.5px + calc($space * 2));
+    max-width: calc(406px + calc($space * 2));
 }
 
 .target-wrapper {

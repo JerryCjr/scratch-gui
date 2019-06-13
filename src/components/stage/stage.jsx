@@ -58,7 +58,10 @@ const StageComponent = props => {
                         width: stageDimensions.width
                     }}
                 >
+                    <div className={classNames({[styles.assistLeft]: !isFullScreen})}>{}</div>
+                    <div className={classNames({[styles.assistRight]: !isFullScreen})}>{}</div>
                     <DOMElementRenderer
+                        className={styles.main}
                         domElement={canvas}
                         style={{
                             height: stageDimensions.height,
