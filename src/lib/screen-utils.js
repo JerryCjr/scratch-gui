@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import layout, {STAGE_DISPLAY_SCALES, STAGE_SIZE_MODES, STAGE_DISPLAY_SIZES} from '../lib/layout-constants';
 
 /**
@@ -55,7 +56,7 @@ const getStageDimensions = (stageSize, isFullScreen) => {
             STAGE_DIMENSION_DEFAULTS.menuHeightAdjustment -
             STAGE_DIMENSION_DEFAULTS.fullScreenSpacingBorderAdjustment;
 
-        stageDimensions.width = (stageDimensions.height / 9) * 16;
+        stageDimensions.width = (stageDimensions.height / 9) * 19.5;
 
         if (stageDimensions.width > window.innerWidth) {
             stageDimensions.width = window.innerWidth;
